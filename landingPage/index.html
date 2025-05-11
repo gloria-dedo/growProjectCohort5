@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mentor Hub</title>
+    <link rel="icon" href="./images/favIcon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <section>
+      <header>
+        <a><img src="./images/AppLogo.svg" alt="App logo" /></a>
+
+        <!-- Hamburger menu for mobile -->
+        <div class="hamburger" onclick="toggleMenu()">
+          <i class="fa fa-bars"></i>
+        </div>
+
+        <nav id="nav-menu">
+          <a>Home</a>
+          <a>About Us</a>
+          <a>How it Works</a>
+          <a>Success Stories</a>
+          <a>Pricing</a>
+          <a>FAQ's</a>
+        </nav>
+        <div>
+          <button class="login-btn">Login</button>
+          <button class="signUp-btn">Sign Up</button>
+        </div>
+      </header>
+
+      <div class="hero">
+        <div class="hero-content">
+          <h1 class="hero-text">
+            Grow Your Career with the Right Mentors Your <br />
+            Journey to Success Starts with Guidance
+          </h1>
+          <p class="sub-text">
+            Find expert mentors on MentorsHub—your career isn’t a solo
+            adventure. <br />
+            Powered by AI, we connect you with top mentors for free.
+          </p>
+          <div class="hero-buttons">
+            <button class="mentorBtn">Find a Mentor</button>
+            <button class="mentorBtn2">Become a Mentor</button>
+          </div>
+
+          <div>
+            <img
+              src="./images/slide1.svg"
+              alt="Mentor Image"
+              class="hero-image"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="service-container">
+      <div class="service-header-container">
+        <h2 class="service-header">Tailoring Talent for<br />Excellence</h2>
+        <p class="service-subText">
+          Founded by passionate professionals, we believe everyone deserves
+          access to mentorship. <br />Our platform bridges the gap between
+          aspiring learners and industry experts.
+        </p>
+      </div>
+      <div class="services-content">
+        <div class="service-one">
+          <img src="./images/icon1.svg" alt="service icon" width="40px" />
+          <h4 class="sub-header">Choose Your Mentor</h4>
+          <p class="service-sub-text">
+            Browse our list of verified mentors in tech, business,<br />
+            and design. Pick the one who aligns with <br />
+            your goals.
+          </p>
+          <img
+            src="./images/image1.svg"
+            alt="service image"
+            class="service-img"
+            width="250px"
+          />
+        </div>
+        <div class="service-one">
+          <img src="./images/icon2.svg" alt="service icon" width="40px" />
+          <h4 class="sub-header">Share Your Goals</h4>
+          <p class="service-sub-text">
+            Tell us what you are looking to learn or achieve.<br />
+            We'll help you shape a roadmap with <br />your mentor.
+          </p>
+          <img
+            src="./images/image2.svg"
+            alt="service image"
+            class="service-img"
+            width="250px"
+          />
+        </div>
+        <div class="service-one">
+          <img src="./images/icon3.svg" alt="service icon" width="40px" />
+          <h4 class="sub-header">Start Your Mentorship Journey</h4>
+          <p class="service-sub-text">
+            Book your first session and begin your personalized<br />
+            mentorship experience with confidence.
+          </p>
+          <img
+            src="./images/image3.svg"
+            alt="service image"
+            class="service-img"
+            width="250px"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="mentor-map service-container">
+      <div class="service-header-container">
+        <h2 class="service-header">
+          Find Mentors Near <br />
+          You
+        </h2>
+        <p class="service-subText">
+          Connect with mentors based on your location to enjoy more personalized
+          support, schedule in-person or <br />virtual sessions with ease, and
+          gain industry insights relevant to your local job market.
+        </p>
+      </div>
+      <div class="map-container">
+        <img
+          src="./images/WorldMap.svg"
+          alt="Mentor Map"
+          class="mentor-map-image hero-image"
+        />
+
+        <div class="marker marker-ghana">
+          <div class="label">Accra, Ghana</div>
+        </div>
+
+        <div class="marker marker-nigeria">
+          <div class="label">Lagos, Nigeria</div>
+        </div>
+
+        <div class="marker marker-usa">
+          <div class="label">New York, USA</div>
+        </div>
+
+        <div class="marker marker-asia">
+          <div class="label">Tokyo, Japan</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="service-container">
+
+        <div class="service-header-container">
+            <h2 class="service-header">
+                Transparent <br> Pricing Real Value
+            </h2>
+            <p class="service-subText">
+                We offer flexible mentorship plans to fit your goals and budget. No hidden fees—just expert guidance, <br>when you need it.
+            </p>
+        </div>
+
+        <div class="pricing-container">
+            <div>
+                <img src="./images/pricing1.svg" alt="Basic plan Icon">
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <!-- Overlay for mobile menu background -->
+    <div class="overlay" id="overlay"></div>
+
+    <script>
+      function toggleMenu() {
+        const navMenu = document.getElementById("nav-menu");
+        const overlay = document.getElementById("overlay");
+        navMenu.classList.toggle("active");
+        overlay.classList.toggle("active");
+      }
+
+      // Close menu when clicking on overlay
+      document.getElementById("overlay").addEventListener("click", function () {
+        document.getElementById("nav-menu").classList.remove("active");
+        this.classList.remove("active");
+      });
+    </script>
+  </body>
+</html>
