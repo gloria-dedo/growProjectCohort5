@@ -1,0 +1,147 @@
+
+
+.faq-container{
+    background-color: white;
+    width: 100%;
+    
+}
+/* Tabs Implementation */
+.tabs {
+  margin: 40px 0;
+}
+
+.tabs-container {
+  /* width: 100%; */
+  padding: 30px;
+}
+/* .tab-content-container{
+    width: 100%;
+    background-color: red;
+} */
+
+.tab-input {
+  display: none;
+}
+
+.tabs-labels {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  /* margin-bottom: 20px; */
+  /* margin-top: 30px; */
+}
+
+.tab-label {
+  display: inline-block;
+  padding: 12px 25px;
+  border-radius: 30px;
+  background: #F5F7FA;
+  cursor: pointer;
+  font-weight: medium;
+  transition: background 0.3s ease;
+  text-align: center;
+  /* Removed flex: 1 to prevent stretching */
+}
+
+.tab-label:hover {
+  background: #e0e0e0;
+}
+
+.tab-content {
+  display: none;
+  padding: 25px;
+  background: #fff;
+  /* border-top: 1px solid #ddd; */
+}
+
+/* Show the tab content when corresponding radio button is checked */
+#tab1:checked ~ .tab-content-container .tab1-content,
+#tab2:checked ~ .tab-content-container .tab2-content,
+#tab3:checked ~ .tab-content-container .tab3-content,
+#tab4:checked ~ .tab-content-container .tab4-content {
+  display: block;
+}
+
+/* Active tab styles */
+#tab1:checked ~ .tabs-labels .tab1-label,
+#tab2:checked ~ .tabs-labels .tab2-label,
+#tab3:checked ~ .tabs-labels .tab3-label,
+#tab4:checked ~ .tabs-labels .tab4-label {
+  background: #023796;
+  color: white;
+}
+
+/* Accordion Implementation */
+.accordion-item {
+  margin-bottom: 5px;
+}
+
+.accordion-input {
+  display: none;
+}
+
+.accordion-label {
+  display: block;
+  padding: 15px;
+  background: #f1f1f1;
+  cursor: pointer;
+  font-weight: bold;
+  position: relative;
+  transition: background 0.3s ease;
+}
+
+.accordion-label:hover {
+  background: #e0e0e0;
+}
+
+.accordion-label::after {
+  content: '+';
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  font-size: 18px;
+  transition: transform 0.3s ease;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  background: #fff;
+}
+
+.accordion-content-inner {
+  padding: 0 15px;
+  border-top: 1px solid #ddd;
+}
+
+/* Show accordion content when checkbox is checked */
+.accordion-input:checked ~ .accordion-label {
+  background: #F5F7FA;
+  color: #141F33;
+}
+
+.accordion-input:checked ~ .accordion-label::after {
+  content: '-';
+}
+
+.accordion-input:checked ~ .accordion-content {
+  max-height: 500px; /* Large enough to fit content */
+}
+
+.accordion-input:checked ~ .accordion-content .accordion-content-inner {
+  padding: 15px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .tabs-labels {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  
+  .tab-label {
+    /* Removed width: 100% to prevent full-width stretching */
+    min-width: 150px;
+  }
+}

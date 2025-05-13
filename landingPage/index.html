@@ -6,6 +6,7 @@
     <title>Mentor Hub</title>
     <link rel="icon" href="./images/favIcon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/tabs.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -222,7 +223,7 @@
         </main>
 
     </div>
-    <div class="video-section">
+    <div class="video-section service-container">
         <video autoplay muted loop playsinline>
           <source src="./videos/metorVid.mp4" type="video/mp4">
         </video>
@@ -233,6 +234,169 @@
           <button class="play-btn">▶</button>
         </div>
       </div>
+      <!-- Tabs with Accordian Section -->
+       <div class="service-container">
+
+        <div class="service-header-container">
+          <h2 class="service-header">Frequently Asked<br> Questions</h2>
+          <p class="service-subText">
+            Got questions? We've got answers. Whether you're curious about how mentorship works, how we match mentors, or what you need to get started—our FAQ section covers<br> it all so you can join with confidence.
+          </p>
+        </div>
+       </div>
+       <div class="faq-container">
+        <div class="tabs">
+          <div class="tabs-container">
+            <!-- Hidden radio inputs for tab control -->
+            <input type="radio" name="tabs" id="tab1" class="tab-input" checked>
+            <input type="radio" name="tabs" id="tab2" class="tab-input">
+            <input type="radio" name="tabs" id="tab3" class="tab-input">
+            <input type="radio" name="tabs" id="tab4" class="tab-input">
+      
+            <!-- Tab labels - moved to correct position in HTML structure -->
+            <div class="tabs-labels">
+              <label for="tab1" class="tab-label tab1-label">General Questions</label>
+              <label for="tab2" class="tab-label tab2-label">For Mentees</label>
+              <label for="tab3" class="tab-label tab3-label">For Mentors</label>
+              <label for="tab4" class="tab-label tab4-label">Technical & Support</label>
+            </div>
+            
+            <!-- Tab content -->
+            <div class="tab-content-container">
+              <div class="tab-content tab1-content">
+                <div class="accordion-item">
+                  <input type="checkbox" id="accordion1" class="accordion-input">
+                  <label for="accordion1" class="accordion-label">What is this mentorship program about?</label>
+                  <div class="accordion-content">
+                    <div class="accordion-content-inner">
+                      <h3>Program Overview</h3>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque numquam asperiores explicabo quis voluptates, aliquid aut consequatur qui esse voluptatem quod? Animi voluptate distinctio tenetur. Reprehenderit, commodi. Distinctio, animi. Accusamus.</p>
+                     
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="accordion-item">
+                  <input type="checkbox" id="accordion1-2" class="accordion-input">
+                  <label for="accordion1-2" class="accordion-label">How long does the program last?</label>
+                  <div class="accordion-content">
+                    <div class="accordion-content-inner">
+                      <h3>Program Duration</h3>
+                      <p>Our mentorship program typically runs for 3 months, with weekly or bi-weekly meetings between mentors and mentees.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="tab-content tab2-content">
+                <div class="accordion-item">
+                  <input type="checkbox" id="accordion2-1" class="accordion-input">
+                  <label for="accordion2-1" class="accordion-label">How do I apply as a mentee?</label>
+                  <div class="accordion-content">
+                    <div class="accordion-content-inner">
+                      <h3>Mentee Application Process</h3>
+                      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error repellendus eligendi quo unde eum necessitatibus neque veritatis debitis a? Illo ipsum voluptatum, et iste recusandae minima officiis hic dolores nam?</p>
+                      <ul>
+                        <li>Complete the online application form</li>
+                        <li>Participate in a screening interview</li>
+                        <li>Get matched with a suitable mentor</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="accordion-item">
+                  <input type="checkbox" id="accordion2-2" class="accordion-input">
+                  <label for="accordion2-2" class="accordion-label">What should I expect from my mentor?</label>
+                  <div class="accordion-content">
+                    <div class="accordion-content-inner">
+                      <h3>Mentor Expectations</h3>
+                      <p>Your mentor will provide guidance, share knowledge, and help you develop skills relevant to your field of interest.</p>
+                      <ul>
+                        <li>Regular feedback on your progress</li>
+                        <li>Professional advice and networking opportunities</li>
+                        <li>Support throughout the program duration</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="tab-content tab3-content">
+                <div class="accordion-item">
+                  <input type="checkbox" id="accordion3-1" class="accordion-input">
+                  <label for="accordion3-1" class="accordion-label">How do I become a mentor?</label>
+                  <div class="accordion-content">
+                    <div class="accordion-content-inner">
+                      <h3>Mentor Application Process</h3>
+                      <p>Experienced professionals with at least 5 years in their field can apply to become mentors. The application includes:</p>
+                      <ol>
+                        <li>Submitting your professional resume</li>
+                        <li>Writing a statement of purpose</li>
+                        <li>Completing a brief interview with our program coordinator</li>
+                      </ol>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="accordion-item">
+                  <input type="checkbox" id="accordion3-2" class="accordion-input">
+                  <label for="accordion3-2" class="accordion-label">What is the time commitment for mentors?</label>
+                  <div class="accordion-content">
+                    <div class="accordion-content-inner">
+                      <h3>Time Commitment</h3>
+                      <p>Mentors are expected to dedicate approximately 2-4 hours per month to the program, including:</p>
+                      <ul>
+                        <li>Regular 1-on-1 sessions with your mentee</li>
+                        <li>Occasional check-ins via email or messaging</li>
+                        <li>Quarterly mentor community meetings</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="tab-content tab4-content">
+                <div class="accordion-item">
+                  <input type="checkbox" id="accordion4-1" class="accordion-input">
+                  <label for="accordion4-1" class="accordion-label">How do I contact technical support?</label>
+                  <div class="accordion-content">
+                    <div class="accordion-content-inner">
+                      <h3>Technical Support</h3>
+                      <p>If you encounter any issues with the platform or need technical assistance, you can:</p>
+                      <ul>
+                        <li>Email our support team at support@example.com</li>
+                        <li>Use the in-app chat feature</li>
+                        <li>Call our helpline at (555) 123-4567 during business hours</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="accordion-item">
+                  <input type="checkbox" id="accordion4-2" class="accordion-input">
+                  <label for="accordion4-2" class="accordion-label">What browsers are supported?</label>
+                  <div class="accordion-content">
+                    <div class="accordion-content-inner">
+                      <h3>Browser Compatibility</h3>
+                      <p>Our platform works best with the following browsers:</p>
+                      <ul>
+                        <li>Chrome (latest version)</li>
+                        <li>Firefox (latest version)</li>
+                        <li>Safari (latest version)</li>
+                        <li>Edge (latest version)</li>
+                      </ul>
+                      <p>We recommend keeping your browser updated for the best experience.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
       
 
     <!-- Overlay for mobile menu background -->
