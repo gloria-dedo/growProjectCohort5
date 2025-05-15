@@ -1,4 +1,4 @@
-/* Scroll Animation CSS */
+
 
 /* Base styling for scroll-reveal elements */
 .scroll-reveal {
@@ -48,7 +48,6 @@
     transition-duration: 0.4s;
   }
   
-  /* Make specific elements stagger in a sequence */
   .staggered-parent .scroll-reveal:nth-child(1) {
     transition-delay: 0.1s;
   }
@@ -69,7 +68,7 @@
     transition-delay: 0.7s;
   }
   
-  /* For elements that should appear earlier (use a smaller offset) */
+ 
   .scroll-reveal-early {
     transition-delay: 0s;
   }

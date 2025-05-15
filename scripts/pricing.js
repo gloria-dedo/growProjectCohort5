@@ -32,7 +32,7 @@ const pricingPlans = [
 
 function loadPricingPlans() {
     const pricingHTML = pricingPlans.map(plan => `
-        <div class="pricing-container ${plan.containerClass}">
+        <div class="pricing-container scroll-reveal ${plan.containerClass}">
             <div class="pricing-header">
                 <img src="${plan.icon}" alt="${plan.title} plan Icon" />
                 <div>

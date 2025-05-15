@@ -9,10 +9,12 @@
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/tabs.css" />
     <link rel="stylesheet" href="./css/responsiveTypograhpy.css" />
+    <link rel="stylesheet" href="./css/scroAnime.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <script src="./scripts/service.js" defer></script>
     <script src="./scripts/pricing.js" defer></script>
     <script src="./scripts/index.js" defer></script>
+    <script src="./scripts/scroll.js" defer></script>
 
 </head>
 
@@ -76,7 +78,7 @@
     </section>
 
     <section id="how-it-works" class="mentor-map service-container container">
-        <div class="service-header-container">
+        <div class="service-header-container scroll-reveal">
             <h2 class="service-header">
                 Find Mentors Near <br />
                 You
@@ -88,28 +90,28 @@
             </p>
         </div>
         <div class="map-container">
-            <img src="./images/WorldMap.svg" alt="Mentor Map" class="mentor-map-image hero-image" />
+            <img src="./images/WorldMap.svg" alt="Mentor Map" class="mentor-map-image hero-image scroll-reveal scroll-reveal-zoom" />
 
-            <div class="marker marker-ghana">
+            <div class="marker marker-ghana scroll-reveal scroll-reveal-slow">
                 <div class="label">Accra, Ghana</div>
             </div>
 
-            <div class="marker marker-nigeria">
+            <div class="marker marker-nigeria scroll-reveal scroll-reveal-slow">
                 <div class="label">Lagos, Nigeria</div>
             </div>
 
-            <div class="marker marker-usa">
+            <div class="marker marker-usa scroll-reveal scroll-reveal-slow">
                 <div class="label">New York, USA</div>
             </div>
 
-            <div class="marker marker-asia">
+            <div class="marker marker-asia scroll-reveal scroll-reveal-slow">
                 <div class="label">Tokyo, Japan</div>
             </div>
         </div>
     </section>
 
     <section id="pricing" class="service-container container">
-        <div class="service-header-container">
+        <div class="service-header-container scroll-reveal">
             <h2 class="service-header">
                 Transparent <br />
                 Pricing Real Value
@@ -119,7 +121,7 @@
                 hidden fees—just expert guidance, <br />when you need it.
             </p>
         </div>
-        <main> </main>
+        <main class="staggered-parent"> </main>
     </section>
     <section id="stories" class="video-section service-container">
         <video autoplay muted loop playsinline>
@@ -127,14 +129,14 @@
         </video>
 
         <!-- Overlay contents -->
-        <div class="overlay">
+        <div class="overlay scroll-reveal">
             <h2>Shaping Your Future<br />Because We Can</h2>
             <button class="play-btn">▶</button>
         </div>
     </section>
     <!-- Tabs with Accordian Section -->
     <section id="faqs" class="service-container ">
-        <div class="service-header-container">
+        <div class="service-header-container scroll-reveal">
             <h2 class="service-header">
                 Frequently Asked<br />
                 Questions
@@ -147,7 +149,7 @@
             </p>
         </div>
     </section>
-    <div class="faq-container ">
+    <div class="faq-container scroll-reveal ">
         <div class="tabs">
             <div class="tabs-container">
                 <!-- Hidden radio inputs for tab control -->
@@ -338,9 +340,9 @@
             </div>
         </div>
     </div>
-    <footer class="service-container ">
+    <footer class="service-container">
         <div class="service-header-container">
-            <h2 class="footer-header">
+            <h2 class="footer-header scroll-reveal">
                 Join our newsletter to get the <br />
                 latest guides on career!
             </h2>
@@ -352,7 +354,7 @@
             </div>
         </form>
         <div class="footer-links">
-            <div class="footer-nav">
+            <div class="footer-nav scroll-reveal">
                 <h3>NAVIGATION</h3>
                 <a href="#">Home</a>
                 <a href="#">About Us</a>
@@ -360,14 +362,14 @@
                 <a href="#">Success Stories</a>
                 <a href="#">Pricing</a>
             </div>
-            <div class="footer-nav">
+            <div class="footer-nav scroll-reveal">
                 <h3>SUPPORT</h3>
                 <a href="#">FAQ's</a>
                 <a href="#">Contact Us</a>
                 <a href="#">Privacy Policy</a>
                 <a href="#">Terms of Service</a>
             </div>
-            <div class="footer-nav">
+            <div class="footer-nav scroll-reveal">
                 <h3>CONNECT</h3>
                 <a href="#">LinkedIn</a>
                 <a href="#">Twitter</a>
