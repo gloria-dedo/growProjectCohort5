@@ -1,0 +1,71 @@
+
+  
+  
+  /* Large tablets and small desktops */
+  @media screen and (max-width: 1200px) {
+    html {
+      font-size: 15px; /* Slightly smaller base font */
+    }
+  }
+  
+  /* Tablets and small laptops */
+  @media screen and (max-width: 992px) {
+    html {
+      font-size: 14px; /* Reduced base font */
+    }
+    
+    h1, .hero-text {
+      font-size: 2.25rem; /* 31.5px at this breakpoint */
+    }
+    
+    h2, .service-header, .footer-header {
+      font-size: 1.85rem; /* 25.9px at this breakpoint */
+    }
+  }
+  
+  /* Large phones and tablets */
+  @media screen and (max-width: 768px) {
+    html {
+      font-size: 13px; /* Further reduced base font */
+    }
+    
+    h1, .hero-text {
+      font-size: 2.1rem; /* 27.3px at this breakpoint */
+    }
+    
+    h2, .service-header, .footer-header {
+      font-size: 1.7rem; /* 22.1px at this breakpoint */
+    }
+    
+    /* Increase button text for better tap targets */
+    button, .login-btn, .signUp-btn, .mentorBtn, .mentorBtn2, .pricing-btn {
+      font-size: 1.1rem;
+    }
+  }
+  
+  /* Small phones */
+  @media screen and (max-width: 480px) {
+    html {
+      font-size: 12px; /* Smallest base font */
+    }
+    
+    h1, .hero-text {
+      font-size: 1.9rem; /* 22.8px at this breakpoint */
+    }
+    
+    h2, .service-header, .footer-header {
+      font-size: 1.6rem; /* 19.2px at this breakpoint */
+    }
+    
+    .sub-text, .service-subText {
+      font-size: 0.92rem; /* Slightly larger for readability */
+    }
+    
+    .pricing-description {
+      font-size: 0.85rem; /* Increased for readability */
+    }
+    
+    .footer-links a {
+      font-size: 0.85rem; /* Increased for better tap targets */
+    }
+  }
